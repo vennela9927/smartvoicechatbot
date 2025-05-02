@@ -37,21 +37,30 @@ cd <repository_name>
 ```
 ### 2.Install Dependencies
 Create a virtual environment to manage the project's dependencies:
+
+```bash
 python3 -m venv venv
 source venv/bin/activate  # For macOS/Linux
 .\venv\Scripts\activate   # For Windows
+```
 
 ### Install the required Python libraries:
+```bash
 pip install -r requirements.txt
+```
 
 ### Alternatively, you can install the libraries individually:
+```bash
 pip install llama-cpp-python speechrecognition pyttsx3 pyaudio
+```
 
 ### 3. Run the Assistant
 Once all dependencies are installed, you're ready to run the assistant. The Mistral 7B Instruct model file is already included in the repository, so you can skip the step of downloading it.
 
 To start the assistant, run the following command:
+```bash
 python assistant.py
+```
 
 The assistant will begin listening to your voice input and provide responses through text and speech.
 
